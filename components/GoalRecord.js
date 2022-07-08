@@ -11,7 +11,7 @@ import {
 import { FONTSIZE } from "../constants/constants";
 import { MaterialIcons } from "@expo/vector-icons";
 import * as Progress from "react-native-progress";
-import { loadSavingTransaction } from "../Helper/firebaseAPI";
+import { loadSavingTransaction } from "../Helper/local-storage-service";
 import { formatMoney } from "../Helper/helpers";
 const dv_width = Dimensions.get("window").width;
 

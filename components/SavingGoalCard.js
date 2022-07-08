@@ -8,7 +8,7 @@ import {
   FontAwesome5,
 } from "@expo/vector-icons";
 import { formatMoney } from "../Helper/helpers";
-import { updateSavingGoalStatus } from "../Helper/firebaseAPI";
+import { updateSavingGoalStatus } from "../Helper/local-storage-service";
 
 const SavingGoalCard = (props) => {
   const progress_perc = props.item.currentMoney / props.item.savingValue;

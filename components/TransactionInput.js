@@ -22,7 +22,7 @@ import WalletType from "../components/WalletType";
 import {
   loadExpenseLimitValueByCategoryId,
   checkExpenseLimitForCategory,
-} from "../Helper/firebaseAPI";
+} from "../Helper/local-storage-service";
 
 const TransactionInput = (props) => {
   const [date, setDate] = useState(new Date());

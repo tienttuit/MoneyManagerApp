@@ -14,7 +14,7 @@ import {
   deleteTransaction,
   loadTransaction,
   undoTransaction,
-} from "../Helper/firebaseAPI";
+} from "../Helper/local-storage-service";
 import { FONTSIZE } from "../constants/constants";
 import { formatMoney } from "../Helper/helpers";
 import { FontAwesome } from "@expo/vector-icons";

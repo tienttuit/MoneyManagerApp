@@ -18,7 +18,7 @@ export const autoSignIn = () => {
     });
 };
 
-export const AddTransactionToFirebase = async (input) => {
+export const AddTransaction = async (input) => {
   let index = createKeyID(auth.currentUser.uid, input.date);
   const data = {
     moneyValue: input.money,
@@ -239,7 +239,7 @@ export const loadDeletedTransaction = async (
   }, 1000);
 };
 
-export const AddSavingGoalToFirebase = async (input) => {
+export const AddSavingGoal = async (input) => {
   const data = {
     goalID: createKeyID(auth.currentUser.uid, input.date),
     goalName: input.goalName,
@@ -333,7 +333,7 @@ export const updateSavingGoalStatus = async (goalID) => {
   }
 };
 
-export const addExpenseLimitsToFirebase = async (limitValue, category) => {
+export const addExpenseLimits = async (limitValue, category) => {
   const index = "category_" + category.id;
   const jsonValue = await AsyncStorage.getItem("expense_limits");
   let data = {};

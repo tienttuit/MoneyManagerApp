@@ -23,10 +23,10 @@ import { EXPENSE_DATA } from "../model/data";
 import { Svg } from "react-native-svg";
 import { VictoryPie } from "victory-native";
 import {
-  addExpenseLimitsToFirebase,
+  addExpenseLimits,
   loadExpenseLimitValueByCategoryId,
   loadExpensesByCategoryList,
-} from "../Helper/firebaseAPI";
+} from "../Helper/local-storage-service";
 
 const ExpenseLimit = () => {
   // dummy data
@@ -535,7 +535,7 @@ const ExpenseLimit = () => {
                 if (limit == null) {
                   console.log(-1);
                 } else {
-                  addExpenseLimitsToFirebase(limit, selectedCategory);
+                  addExpenseLimits(limit, selectedCategory);
                   setVisible(false);
                 }
               }}

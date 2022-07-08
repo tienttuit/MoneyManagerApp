@@ -20,14 +20,14 @@ import { FONTSIZE } from "../constants/constants";
 import { formatMoney, createKeyFromDate } from "../Helper/helpers";
 import NoTransactionCard from "../components/NoTransactionCard";
 import {
-  AddTransactionToFirebase,
+  AddTransaction,
   loadTransaction,
-} from "../Helper/firebaseAPI";
+} from "../Helper/local-storage-service";
 import {
   loadSavingGoalData,
   autoSignIn,
   _onAuthStateChanged,
-} from "../Helper/firebaseAPI";
+} from "../Helper/local-storage-service";
 import { auth } from "../firebase";
 import { LogBox } from "react-native";
 

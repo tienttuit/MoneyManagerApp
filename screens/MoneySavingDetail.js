@@ -12,8 +12,8 @@ import { FONTSIZE } from "../constants/constants";
 import GoalDeTail from "../components/GoalDetail";
 import { MaterialIcons } from "@expo/vector-icons";
 import GoalRecord from "../components/GoalRecord";
-import { updateSavingGoalStatus } from "../Helper/firebaseAPI";
-import { deleteSavingGoal } from "../Helper/firebaseAPI";
+import { updateSavingGoalStatus } from "../Helper/local-storage-service";
+import { deleteSavingGoal } from "../Helper/local-storage-service";
 
 const SavingDetailScreen = (props) => {
   {

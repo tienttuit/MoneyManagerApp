@@ -10,7 +10,10 @@ import {
   Alert,
 } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
-import { deleteTransaction, loadTransaction } from "../Helper/firebaseAPI";
+import {
+  deleteTransaction,
+  loadTransaction,
+} from "../Helper/local-storage-service";
 import { FONTSIZE } from "../constants/constants";
 import { formatMoney } from "../Helper/helpers";
 
